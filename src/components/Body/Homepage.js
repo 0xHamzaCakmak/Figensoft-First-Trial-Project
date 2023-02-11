@@ -4,7 +4,6 @@ import { CardList } from "./CardList";
 function HomePage() {
   return (
         <div>
-          
           <CardList />
         </div>
 

@@ -28,7 +28,7 @@ function Header() {
             <img className="logo-container" src={logo} alt="logo" />
           </a>
           <a href="/" className="logo-postaguvercin">
-            <li>Posta Güvercini</li>
+            <li id="pg">Posta Güvercini</li>
             <li className="version-text">v0.v.9</li>
           </a>
         </div>

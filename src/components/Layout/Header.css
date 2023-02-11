@@ -19,6 +19,7 @@
 .version-text{
     font-size: smaller;
     text-align: left;
+    color: #9a9dc7;
 }
 img{
     width: 8vh;
@@ -42,6 +43,9 @@ ul {
 }
 li{
     list-style:none;
+}
+#pg{
+    color: #fdfdff;
 }
 ul li {
     float:left;

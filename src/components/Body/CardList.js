@@ -9,16 +9,16 @@ import "../Body/Homepage.css";
 const CardAccount = () => {
   return (
     <div className="CardAccount">
-      <img className="card-account-img" src={notprofile}></img>
+      <div className="account-img-group">
+        <img className="card-account-img" src={notprofile}></img>
+      </div>
       <div className="card-firma-adi">Posta Güvercini Ltd. Şti.</div>
       <div className="card-user-name">User Ad Soyad</div>
-      <div>
+      <div className="btn-account-group">
         <button className="btn-account">
           <img className="icon-account" src={plug}></img>
           Partnership
         </button>
-      </div>
-      <div>
         <button className="btn-account">
           <img className="icon-account" src={setting}></img>
           Account Settings
@@ -30,10 +30,10 @@ const CardAccount = () => {
 const CardLoginLog = () => {
   return (
     <div className="card-login-log">
-      <div>Last Successful Login</div>
+      <div className="last-login">Last Successful Login</div>
       <div>Time 10.02.2023 15:40</div> {/* Login olduğu zamanı ekle*/}
       <div>Last Failed Login</div>
-      <div> - yada Time</div>{" "}
+      <div> - Time</div>
       {/* girişte hata yapmışsa tarihi logdan cek ekle */}
     </div>
   );
@@ -41,8 +41,8 @@ const CardLoginLog = () => {
 const CardTechnology = () => {
   return (
     <div className="card-technology">
-      <div>Technology for you</div>
-      <div>
+      <div className="card-technology-header">Technology for you</div>
+      <div className="card-technology-message">
         Figensoft offers worldwide services thanks to its international offices
         and global businnes partnerships with its messaging services and payment
         systems.
@@ -73,12 +73,17 @@ const CardBulkSMS = () => {
   return (
     <div className="products">
       <div className="product-sms">
-        <img src=""></img>
-        <div>Bulk SMS</div>
-        <div>Reach your audiences by sending SMS</div>
-        <button className="btn-shopping">
-          <img src={shopping}></img>
-        </button>
+        <img className="card-product-img" src=""></img>
+        <div className="card-product-header">Bulk SMS</div>
+        <div className="card-product-description">
+          Reach your audiences by sending SMS
+        </div>
+        <div className="btn-shopping-group">
+          <button className="btn-shopping">
+            <div className="btn-top-line"></div>
+            <img className="product-shopping-icon" src={shopping}></img>
+          </button>
+        </div>
       </div>
     </div>
   );
@@ -86,48 +91,68 @@ const CardBulkSMS = () => {
 const CardContacts = () => {
   return (
     <div className="products">
-      <img src=""></img>
-      <div>Contacts</div>
-      <div>Easily manage your contacts</div>
-      <button className="btn-shopping">
-        <img src={shopping}></img>
-      </button>
+      <img className="card-product-img" src=""></img>
+      <div className="card-product-header">Contacts</div>
+      <div className="card-product-description">
+        Easily manage your contacts
+      </div>
+      <div className="btn-shopping-group">
+        <button className="btn-shopping">
+          <div className="btn-top-line"></div>
+          <img className="product-shopping-icon" src={shopping}></img>
+        </button>
+      </div>
     </div>
   );
 };
 const CardEmail = () => {
   return (
     <div className="products">
-      <img src=""></img>
-      <div>Email</div>
-      <div>Send your bulk e-mails quickly</div>
-      <button className="btn-shopping">
-        <img src={shopping}></img>
-      </button>
+      <img className="card-product-img" src=""></img>
+      <div className="card-product-header">Email</div>
+      <div className="card-product-description">
+        Send your bulk e-mails quickly
+      </div>
+      <div className="btn-shopping-group">
+        <button className="btn-shopping">
+          <div className="btn-top-line"></div>
+          <img className="product-shopping-icon" src={shopping}></img>
+        </button>
+      </div>
     </div>
   );
 };
 const CardMMS = () => {
   return (
     <div className="products">
-      <img src=""></img>
-      <div>MMS</div>
-      <div>Easily send multimedia messages to your customers</div>
-      <button className="btn-shopping">
-        <img src={shopping}></img>
-      </button>
+      <img className="card-product-img" src=""></img>
+      <div className="card-product-header">MMS</div>
+      <div className="card-product-description">
+        Easily send multimedia messages to your customers
+      </div>
+      <div className="btn-shopping-group-mms">
+        <button className="btn-shopping">
+          <div className="btn-top-line"></div>
+          <img className="product-shopping-icon" src={shopping}></img>
+        </button>
+      </div>
     </div>
   );
 };
 const CardIntegration = () => {
   return (
     <div className="products">
-      <img src=""></img>
-      <div>Integration</div>
-      <div>Integrate your systems with our comprehensive APIs</div>
-      <button className="btn-shopping">
-        <img src={shopping}></img>
-      </button>
+      <img className="card-product-img" src=""></img>
+      <div className="card-product-header">Integration</div>
+      <div className="card-product-description">
+        Integrate your systems with our comprehensive APIs
+      </div>
+      <div className="btn-shopping-group-integration">
+        <button className="btn-shopping">
+          <div className="btn-top-line"></div>
+          <img className="product-shopping-icon" src={shopping}></img>
+        </button>
+      </div>
     </div>
   );
 };
@@ -135,12 +160,17 @@ const CardConsentManagement = () => {
   return (
     <div className="products">
       <div className="product-management">
-        <img src=""></img>
-        <div>Consent Management</div>
-        <div>Manage your KVVK ETK consents</div>
-        <button className="btn-shopping">
-          <img src={shopping}></img>
-        </button>
+        <img className="card-product-img" src=""></img>
+        <div className="card-product-header">Consent Management</div>
+        <div className="card-product-description">
+          Manage your KVVK ETK consents
+        </div>
+        <div className="btn-shopping-group-consent-management">
+          <button className="btn-shopping">
+            <div className="btn-top-line"></div>
+            <img className="product-shopping-icon" src={shopping}></img>
+          </button>
+        </div>
       </div>
     </div>
   );
@@ -148,48 +178,68 @@ const CardConsentManagement = () => {
 const CardOnlineConsent = () => {
   return (
     <div className="products">
-      <img src=""></img>
-      <div>Online Consent</div>
-      <div>Collect consents from your customers electronically</div>
-      <button className="btn-shopping">
-        <img src={shopping}></img>
-      </button>
+      <img className="card-product-img" src=""></img>
+      <div className="card-product-header">Online Consent</div>
+      <div className="card-product-description">
+        Collect consents from your customers electronically
+      </div>
+      <div className="btn-shopping-group-online-consent">
+        <button className="btn-shopping">
+          <div className="btn-top-line"></div>
+          <img className="product-shopping-icon" src={shopping}></img>
+        </button>
+      </div>
     </div>
   );
 };
 const CardSurvey = () => {
   return (
     <div className="products">
-      <img src=""></img>
-      <div>Survey</div>
-      <div>Create advanced surveys and collect data</div>
-      <button className="btn-shopping">
-        <img src={shopping}></img>
-      </button>
+      <img className="card-product-img" src=""></img>
+      <div className="card-product-header">Survey</div>
+      <div className="card-product-description">
+        Create advanced surveys and collect data
+      </div>
+      <div className="btn-shopping-group-survey">
+        <button className="btn-shopping">
+          <div className="btn-top-line"></div>
+          <img className="product-shopping-icon" src={shopping}></img>
+        </button>
+      </div>
     </div>
   );
 };
 const CardHelpDesk = () => {
   return (
     <div className="products">
-      <img src=""></img>
-      <div>Help Desk</div>
-      <div>Manage your tickets, support your customers easily</div>
-      <button className="btn-shopping">
-        <img src={shopping}></img>
-      </button>
+      <img className="card-product-img" src=""></img>
+      <div className="card-product-header">Help Desk</div>
+      <div className="card-product-description">
+        Manage your tickets, support your customers easily
+      </div>
+      <div className="btn-shopping-group-helpdesk">
+        <button className="btn-shopping">
+          <div className="btn-top-line"></div>
+          <img className="product-shopping-icon" src={shopping}></img>
+        </button>
+      </div>
     </div>
   );
 };
 const CardKnowledgeBase = () => {
   return (
     <div className="products">
-      <img src=""></img>
-      <div>Knowledge Base</div>
-      <div>Gather your information system on a single solution</div>
-      <button className="btn-shopping">
-        <img src={shopping}></img>
-      </button>
+      <img className="card-product-img" src=""></img>
+      <div className="card-product-header">Knowledge Base</div>
+      <div className="card-product-description">
+        Gather your information system on a single solution
+      </div>
+      <div className="btn-shopping-group-knowledge">
+        <button className="btn-shopping">
+          <div className="btn-top-line"></div>
+          <img className="product-shopping-icon" src={shopping}></img>
+        </button>
+      </div>
     </div>
   );
 };
