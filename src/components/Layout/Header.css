@@ -1,4 +1,14 @@
 .header-body{
+  height: 12vh;
+  background-color: #4d4e7e;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  margin-left: 7%;
+}
+.header-bodyy{
     background-color: #4d4e7e;
 }
 .logo-container{

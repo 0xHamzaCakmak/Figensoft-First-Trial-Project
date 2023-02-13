@@ -6,23 +6,20 @@ import dokuznokta from "../../Assets/icon-dokuznokta.png";
 import notification from "../../Assets/icon-notification.png";
 import search from "../../Assets/icon-search.png";
 import user from "../../Assets/icon-user.png";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-import styled from "styled-components";
 
-const StyledHeader = styled.div`
-  height: 12vh;
-  background-color: #4d4e7e;
-  padding: 0 80px;
-  display: flex;
-  justify-content: space-between;
-  justify-items: center;
-  align-items: center;
-  margin-left: 7%;
-`;
 function Header() {
+
+  const {user} = useSelector(state => state.auth)
+
+  
+
   return (
-    <div className="header-body">
-      <StyledHeader>
+    
+    <div className="header-bodyy">
+      <div className="header-body">
         <div className="logo-ve-firmaismi">
           <a href="/">
             <img className="logo-container" src={logo} alt="logo" />
@@ -64,9 +61,10 @@ function Header() {
               </a>
             </li>
           </ul>
-          <button>Login</button>
+          <button to="/register"><Link to="/Login">Login</Link></button>
         </nav>
-      </StyledHeader>
+      </div>
+      
     </div>
   );
 }
