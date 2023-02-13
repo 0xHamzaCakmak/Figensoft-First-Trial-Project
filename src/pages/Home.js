@@ -4,13 +4,18 @@ import Header from "../components/Layout/Header";
 
 export default function Home(){
     const {user} = useSelector(state => state.auth)
+    
     if(user){
-        console.log(user.email)
-    }
-    return(
-        <>
+        console.log(user)
+        //console.log("mail",user.user.email)
+        return(
+            <>
         <Header/>
         <HomePage/>
+
         </>
-    );
+            
+        )
+    }
+
 };

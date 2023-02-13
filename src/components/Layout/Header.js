@@ -5,19 +5,16 @@ import discord from "../../Assets/icon-discord.png";
 import dokuznokta from "../../Assets/icon-dokuznokta.png";
 import notification from "../../Assets/icon-notification.png";
 import search from "../../Assets/icon-search.png";
-import user from "../../Assets/icon-user.png";
+import userpp from "../../Assets/icon-user.png";
+
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-
 function Header() {
-
-  const {user} = useSelector(state => state.auth)
-
-  
+  const { user } = useSelector((state) => state.auth);
+  console.log("header mail: ", user.user.email);
 
   return (
-    
     <div className="header-bodyy">
       <div className="header-body">
         <div className="logo-ve-firmaismi">
@@ -61,10 +58,16 @@ function Header() {
               </a>
             </li>
           </ul>
-          <button to="/register"><Link to="/Login">Login</Link></button>
+          <div className="user-img-group">
+            <div>
+              <p className="user-adsoyad">ad soyad</p>
+              <p className="user-email">{user.user.email}</p>
+            </div>
+          </div>
+          <img className="user-account-img" src={userpp}></img>
+          
         </nav>
       </div>
-      
     </div>
   );
 }

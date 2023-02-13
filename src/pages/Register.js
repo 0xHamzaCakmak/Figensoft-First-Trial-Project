@@ -1,4 +1,3 @@
-import { async } from "@firebase/util";
 import { useState } from "react";
 import { register } from "../firebase";
 
@@ -9,7 +8,7 @@ export default function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const user = await register(email, password);
+    const user = await register(email, password,names);
     console.log(user);
   };
   return (
@@ -34,7 +33,8 @@ export default function Register() {
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        <div class="mb-6">
+        
+         <div class="mb-6">
           <label
             class="block text-gray-700 text-sm font-bold mb-2"
             for="names"
@@ -49,7 +49,8 @@ export default function Register() {
             value={names}
             onChange={(e) => setNames(e.target.value)}
           />
-        </div>
+        </div> 
+
         <div class="mb-6">
           <label
             class="block text-gray-700 text-sm font-bold mb-2"

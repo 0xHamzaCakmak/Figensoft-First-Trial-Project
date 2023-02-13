@@ -97,3 +97,23 @@ button {
     font-weight:inherit;
 
 }
+.user-adsoyad{
+    font-size: larger;
+    font-weight: bold;
+    color: #cfcfef;
+    float: right;
+}
+.user-email{
+    margin-left: 250px;
+    color: #cfcfef;
+    font-weight: bold;
+    font-size: smaller;
+}
+.user-account-img{
+    border: 3px solid #2e2d4b;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-left: -40px;
+}

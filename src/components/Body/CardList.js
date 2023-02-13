@@ -1,12 +1,17 @@
 import React from "react";
-import styled from "styled-components";
 import plug from "../../Assets/icon-plug.png";
 import shopping from "../../Assets/icon-shopping.png";
 import setting from "../../Assets/icon-setting.png";
 import notprofile from "../../Assets/icon-not-profile.png";
 import "../Body/Homepage.css";
+import { useSelector } from "react-redux";
+
 
 const CardAccount = () => {
+  const { user } = useSelector((state) => state.auth);
+
+  console.log("last login body:", user.user.lastLoginAt)
+
   return (
     <div className="CardAccount">
       <div className="account-img-group">
@@ -31,9 +36,9 @@ const CardLoginLog = () => {
   return (
     <div className="card-login-log">
       <div className="last-login">Last Successful Login</div>
-      <div>Time 10.02.2023 15:40</div> {/* Login olduğu zamanı ekle*/}
-      <div>Last Failed Login</div>
-      <div> - Time</div>
+      <div className="last-login">Time 10.02.2023 15:40</div> {/* Login olduğu zamanı ekle*/}
+      <div className="last-login">Last Failed Login</div>
+      <div className="last-login"> - Time</div>
       {/* girişte hata yapmışsa tarihi logdan cek ekle */}
     </div>
   );
@@ -96,7 +101,7 @@ const CardContacts = () => {
       <div className="card-product-description">
         Easily manage your contacts
       </div>
-      <div className="btn-shopping-group">
+      <div className="btn-shopping-group-contacts">
         <button className="btn-shopping">
           <div className="btn-top-line"></div>
           <img className="product-shopping-icon" src={shopping}></img>
@@ -113,7 +118,7 @@ const CardEmail = () => {
       <div className="card-product-description">
         Send your bulk e-mails quickly
       </div>
-      <div className="btn-shopping-group">
+      <div className="btn-shopping-group-email">
         <button className="btn-shopping">
           <div className="btn-top-line"></div>
           <img className="product-shopping-icon" src={shopping}></img>

@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   width: 240px;
-  height: 360px;
+  height: 380px;
   background-color: #fff;
 }
 .account-img-group{
@@ -29,21 +29,24 @@
   height: 145px;
 }
 .card-account-img{
+margin-left: 5px;
 margin-top: 5px;
 background-color: #f4f4f4;
 border-radius: 50%;
-height: 135px;
-width: 135px;
+height: 125px;
+width: 125px;
 }
 .card-firma-adi {
+ margin: auto;
   margin-top: 20px;
   color: #797d7f;
 }
 .card-user-name {
+  margin: auto;
   color: #a4a8ac;
 }
 .btn-account-group {
-  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .btn-account {
   background-color: #f7f7f7;
@@ -64,13 +67,15 @@ width: 135px;
   display: flex;
   flex-direction: column;
   width: 240px;
-  height: 140px;
+  height: 160px;
   margin-top: 15px;
   background-color: #fff;
   color: #b6babc;
 }
 .last-login {
   margin-top: 30px;
+  margin: auto;
+  color: #a6aaad;
 }
 .card-technology-header {
   font-weight: bold;
@@ -90,7 +95,7 @@ width: 135px;
   display: flex;
   flex-direction: column;
   width: 240px;
-  height: 180px;
+  height: 220px;
   margin-top: 15px;
   background-color: #fff;
   background-color: #4d4e7e;
@@ -102,7 +107,10 @@ width: 135px;
 .card-message-text {
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 10px;
   text-align: left;
+  color: #c6cae7;
+  font-weight: bold;
 }
 .card-message-blog {
   display: flex;
@@ -122,16 +130,16 @@ width: 135px;
 }
 .product-sms {
   width: 220px;
-  height: 380px;
+  height: 400px;
   background-color: #fff;
+  margin-top: -20px;
 }
 .product-management {
   width: 220px;
-  height: 380px;
+  height: 400px;
   background-color: #fff;
+  margin-top: -20px;
 }
-
-
 .card-product-menu {
   margin-left: 30px;
   margin-right: 10%;
@@ -149,14 +157,16 @@ width: 135px;
 }
 .card-product-10 {
   display: flex;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 /* Product desing*/
 .card-product-img{
     width: 140px;
     height: 160px;
     margin-top: 20px;
+    margin-left: 40px;
 }
+
 .card-product-header{
     margin-top: 30px;
     margin-left: 20px;
@@ -188,25 +198,31 @@ width: 135px;
     background-color: #0fad6a;
   }
   .btn-shopping-group{
-    margin-top: 35px;
+    margin-top: 60px;
+  }
+  .btn-shopping-group-contacts{
+    margin-top: 40px;
+  }
+  .btn-shopping-group-email{
+    margin-top: 40px;
   }
   .btn-shopping-group-mms{
-    margin-top: 13px;
+    margin-top: 15px;
   }
   .btn-shopping-group-integration{
-    margin-top: 13px;
+    margin-top: 15px;
   }
   .btn-shopping-group-consent-management{
-    margin-top: 5px;
+    margin-top: 28px;
   }
   .btn-shopping-group-online-consent{
-    margin-top: 13px;
+    margin-top: 23px;
   }
   .btn-shopping-group-survey{
-    margin-top: 13px;
+    margin-top: 23px;
   }
   .btn-shopping-group-helpdesk{
-    margin-top: 13px;
+    margin-top: 23px;
   } .btn-shopping-group-knowledge{
     margin-top: -15px;
   }
@@ -215,4 +231,5 @@ width: 135px;
     margin-top: 6px;
     height: 4vh;
     width: 4vh;
+    margin-left: 70px;
   }
