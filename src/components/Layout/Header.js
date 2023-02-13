@@ -60,7 +60,7 @@ function Header() {
           </ul>
           <div className="user-img-group">
             <div>
-              <p className="user-adsoyad">ad soyad</p>
+              <p className="user-adsoyad">Hamza Çakmak</p>
               <p className="user-email">{user.user.email}</p>
             </div>
           </div>
